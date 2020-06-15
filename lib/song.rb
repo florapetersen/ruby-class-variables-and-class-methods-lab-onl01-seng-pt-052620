@@ -29,13 +29,13 @@ class Song
   end
 
   def self.genre_count
-    @@genre_count = {}
+    genre_count = {}
     @@genres.each do |genre_name|
-      if @@genre_count.key?(genre_name)
+      if genre_count.key?(genre_name)
       else
-        @@genre_count["#{genre_name}"] = @@genres.count(genre_name)
+        genre_count["#{genre_name}"] = @@genres.count(genre_name)
       end
-    return @@genre_count
+    return genre_count
     end
   end
 end
