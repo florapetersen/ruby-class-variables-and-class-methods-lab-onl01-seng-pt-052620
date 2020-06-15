@@ -35,7 +35,7 @@ class Song
       #else
         genre_count["#{genre_name}"] = @@genres.count(genre_name)
       #end
-    return genre_count
     end
+    return genre_count
   end
 end
