@@ -44,7 +44,7 @@ class Song
     @@artists.each do |artist_name|
       if artist_count.key?(genre_name)
       else
-        genre_count["#{genre_name}"] = @@genres.count(genre_name)
+        artist_count["#{artist_name}"] = @@artists.count(genre_name)
       end
     end
     return artist_count
