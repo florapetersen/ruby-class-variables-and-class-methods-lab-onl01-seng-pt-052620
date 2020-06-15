@@ -45,7 +45,7 @@ class Song
       if artist_count.key?(genre_name)
       else
         genre_count["#{genre_name}"] = @@genres.count(genre_name)
-      end 
+      end
     end
     return artist_count
   end
